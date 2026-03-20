@@ -11,7 +11,7 @@ inputs:
     default: snyk.sarif
   command:
     description: "command to run: create-new-issues, close-fixed-issues, sync-issues"
-    required: true
+    required: false
     default: sync-issues
 runs:
   using: "docker"
