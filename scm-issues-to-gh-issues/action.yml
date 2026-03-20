@@ -12,9 +12,10 @@ inputs:
   use_fresh_issues: 
     description: "when true, check that the SCM issues to process are from a recently tested project (for on 'push' to monitored branch workflow)"
     required: false
-    default: false
+    default: "false"
   command:
     description: "command to run: create-new-issues, close-fixed-issues, sync-issues"
+    required: false
     default: sync-issues
 runs:
   using: "docker"
